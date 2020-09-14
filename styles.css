@@ -1,0 +1,60 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+.navbar {
+    margin-top: 10px;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+}
+
+.navbar .title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.box {
+    display: block;
+    width: 70%;
+    background-color: grey;
+}
+
+.forms {
+    display: inline-block;
+    margin: 5px;
+}
+
+.calculator {
+    width: 50%;
+    float: left;
+}
+
+.submit {
+    display: block;
+    margin: 5px;
+}
+
+.submit > button {
+    display: inline-block;
+}
+
+.imposible {
+    display: none;
+    float: right;
+    width: 50%;
+    margin-top: 40px;
+}
+.imposible > p{
+    display: inline-block;
+}
+.around {
+    margin-left: 10px;
+    border: 2px solid black;
+    padding: 2px;
+}

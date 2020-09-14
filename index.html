@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora Trigonometrica</title>
+        <meta name="author" content="Vicente Cartes">
+        <meta name="charset" content="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <p class="title">Calculadora Trigonométrica</p>
+        </nav>
+        <div class="box">
+            <section class="calculator">
+                <p>Ingresar SÓLO 3 datos y mínimo un lado para calcular (sólo se toman en cuenta los números, los ángulos deben ser expresados en radianes):</p>
+                <div class="formContainer">
+                    <form class="forms sides">
+                        <label for="aSide">Lado A</label><br>
+                        <input type="text" id="aSide" name="aSide"><br><br>
+                        <label for="bSide">Lado B</label><br>
+                        <input type="text" id="bSide" name="bSide"><br><br>
+                        <label for="cSide">Lado C</label><br>
+                        <input type="text" id="cSide" name="cSide">
+                    </form>
+                    <form class="forms angles">
+                        <label for="alpha">Ángulo &#945</label><br>
+                        <input type="text" id="alpha" name="alpha"><br><br>
+                        <label for="beta">Ángulo &#946</label><br>
+                        <input type="text" id="beta" name="beta"><br><br>
+                        <label for="gamma">Ángulo &#947</label><br>
+                        <input type="text" id="gamma" name="gamma">
+                    </form>
+                    <div class="submit">
+                        <button onclick="check()">Calcular</button>
+                        <button onclick="empty()">Vaciar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="imposible">
+                <div class="around">
+                    <p>Los datos elegidos no crean un triángulo, por favor introduzca otros.</p>
+                </div>
+            </section>
+        </div>
+        <script src="script_v2.js"></script>
+    </body>
+</html>
